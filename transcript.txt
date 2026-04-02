@@ -1,0 +1,198 @@
+/Users/chancievan/SWQualityTools
+Buildfile: /Users/chancievan/SWQualityTools/build.xml
+
+clean:
+   [delete] Deleting directory /Users/chancievan/SWQualityTools/build
+   [delete] Deleting directory /Users/chancievan/SWQualityTools/dist
+   [delete] Deleting directory /Users/chancievan/SWQualityTools/doc
+   [delete] Deleting directory /Users/chancievan/SWQualityTools/results
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+Buildfile: /Users/chancievan/SWQualityTools/build.xml
+
+clean:
+
+init:
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/build
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/build/classes
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/dist
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/doc
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/results
+
+compile:
+    [javac] Compiling 2 source files to /Users/chancievan/SWQualityTools/build/classes
+
+dist:
+     [echo] Generating Distribution
+      [jar] Building jar: /Users/chancievan/SWQualityTools/dist/SampleProj20260402.jar
+
+doc:
+     [echo] Creating API Documentation
+  [javadoc] Generating Javadoc
+  [javadoc] Javadoc execution
+  [javadoc] Loading source file /Users/chancievan/SWQualityTools/src/SampleClass.java...
+  [javadoc] Loading source file /Users/chancievan/SWQualityTools/src/SampleClassTest.java...
+  [javadoc] Constructing Javadoc information...
+  [javadoc] Building index for all the packages and classes...
+  [javadoc] Standard Doclet version 21.0.2+13-LTS-58
+  [javadoc] Building tree for all the packages and classes...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/SampleClass.html...
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClass.java:11: warning: no @param for a
+  [javadoc]     public int add(int a, int b) {
+  [javadoc]                ^
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClass.java:11: warning: no @param for b
+  [javadoc]     public int add(int a, int b) {
+  [javadoc]                ^
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClass.java:11: warning: no @return
+  [javadoc]     public int add(int a, int b) {
+  [javadoc]                ^
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClass.java:6: warning: use of default constructor, which does not provide a comment
+  [javadoc] public class SampleClass {
+  [javadoc]        ^
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/SampleClassTest.html...
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClassTest.java:7: warning: use of default constructor, which does not provide a comment
+  [javadoc] public class SampleClassTest {
+  [javadoc]        ^
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClassTest.java:10: warning: no comment
+  [javadoc]     public void testAdditionEqualsFive() {
+  [javadoc]                 ^
+  [javadoc] /Users/chancievan/SWQualityTools/src/SampleClassTest.java:16: warning: no comment
+  [javadoc]     public void testAdditionEqualsTen() {
+  [javadoc]                 ^
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/package-summary.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/package-tree.html...
+  [javadoc] Generating src-html/SampleClass.html...
+  [javadoc] Generating src-html/SampleClassTest.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/class-use/SampleClass.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/class-use/SampleClassTest.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/package-use.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/overview-tree.html...
+  [javadoc] Building index for all classes...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/allclasses-index.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/allpackages-index.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/index-all.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/search.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/index.html...
+  [javadoc] Generating /Users/chancievan/SWQualityTools/doc/help-doc.html...
+  [javadoc] 7 warnings
+
+pmd:
+     [echo] Running PMD
+net.sourceforge.pmd.ant.internal.PMDTaskImpl - Logging is at INFO
+     [xslt] Processing /Users/chancievan/SWQualityTools/results/pmd_report.xml to /Users/chancievan/SWQualityTools/results/pmd_report.html
+     [xslt] Loading stylesheet pmd-report.xsl
+
+cpd:
+     [echo] Running CPD
+      [cpd] Starting run, minimumTokenCount is 100
+      [cpd] Tokenizing files
+      [cpd] Starting to analyze code
+      [cpd] No duplicates over 100 tokens found
+      [cpd] Generating report
+      [cpd] Done analyzing code; that took 12 milliseconds
+
+spotbugs:
+     [echo] Running SpotBugs
+ [spotbugs] Executing SpotBugs FindBugsTask from ant task
+ [spotbugs] Running SpotBugs...
+ [spotbugs] Output saved to results/spotbugs.html
+
+checkstyle:
+     [echo] Running Checkstyle
+[checkstyle] Running Checkstyle 13.3.0 on 2 files
+     [xslt] Processing /Users/chancievan/SWQualityTools/results/checkstyle_report.xml to /Users/chancievan/SWQualityTools/results/checkstyle_report.html
+     [xslt] Loading stylesheet checkstyle-noframes.xsl
+
+test:
+     [echo] Running JUnit with JaCoCo
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/results/junit
+    [mkdir] Created dir: /Users/chancievan/SWQualityTools/results/jacoco
+[jacoco:coverage] Enhancing java with coverage
+     [java] 
+     [java] Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+     [java] 
+     [java] [36m╷[0m
+     [java] [36m├─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+     [java] [36m└─[0m [36mJUnit Jupiter[0m [32m✔[0m
+     [java] [36m   └─[0m [36mSampleClassTest[0m [32m✔[0m
+     [java] [36m      ├─[0m [34mtestAdditionEqualsFive()[0m [32m✔[0m
+     [java] [36m      └─[0m [34mtestAdditionEqualsTen()[0m [32m✔[0m
+     [java] 
+     [java] Test run finished after 89 ms
+     [java] [         3 containers found      ]
+     [java] [         0 containers skipped    ]
+     [java] [         3 containers started    ]
+     [java] [         0 containers aborted    ]
+     [java] [         3 containers successful ]
+     [java] [         0 containers failed     ]
+     [java] [         2 tests found           ]
+     [java] [         0 tests skipped         ]
+     [java] [         2 tests started         ]
+     [java] [         0 tests aborted         ]
+     [java] [         2 tests successful      ]
+     [java] [         0 tests failed          ]
+     [java] 
+[jacoco:report] Loading execution data file /Users/chancievan/SWQualityTools/results/jacoco/jacoco.exec
+[jacoco:report] Writing bundle 'SampleProj Test Coverage Report' with 1 classes
+[junitreport] Processing /Users/chancievan/SWQualityTools/results/junit/TESTS-TestSuites.xml to /var/folders/kt/yp5tw4_x5l58yvz16rh14v480000gn/T/null1465015103
+[junitreport] Loading stylesheet file:/opt/homebrew/Cellar/ant/1.10.16/libexec/lib/ant-junit.jar!/org/apache/tools/ant/taskdefs/optional/junit/xsl/junit-frames.xsl
+[junitreport] Transform time: 66ms
+[junitreport] Deleting: /var/folders/kt/yp5tw4_x5l58yvz16rh14v480000gn/T/null1465015103
+     [echo] JUnit report: results/junit/index.html
+     [echo] JaCoCo report: results/jacoco/index.html
+
+quality:
+     [echo] Results placed in results
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+build:
+classes
+
+dist:
+SampleProj20260402.jar
+
+doc:
+allclasses-index.html
+allpackages-index.html
+class-use
+copy.svg
+element-list
+help-doc.html
+index-all.html
+index.html
+legal
+link.svg
+member-search-index.js
+module-search-index.js
+overview-tree.html
+package-search-index.js
+package-summary.html
+package-tree.html
+package-use.html
+resources
+SampleClass.html
+SampleClassTest.html
+script-dir
+script.js
+search-page.js
+search.html
+search.js
+src-html
+stylesheet.css
+tag-search-index.js
+type-search-index.js
+
+results:
+checkstyle_report.html
+checkstyle_report.txt
+checkstyle_report.xml
+cpd.txt
+jacoco
+junit
+pmd_report.html
+pmd_report.xml
+spotbugs.html
